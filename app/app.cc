@@ -4,21 +4,6 @@
 
 int main(int argc, char **argv)
 {
-    for (unsigned int i = 0; i < 100; i++)
-    {
-        if (ulam::is_prime(i))
-        {
-            ulam::print_colored_text(std::to_string(i), ulam::TextColor::green);
-        }
-        else
-        {
-            std::cout << i;
-        }
-        std::cout << " ";
-    }
-    std::cout << std::endl;
-    return 0;
-
     // variables
     int *values = nullptr;               // an array to hold values for our spiral
     int values_size = 0;                 // size of the values array
