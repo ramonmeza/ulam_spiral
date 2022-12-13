@@ -84,5 +84,7 @@ int main(int argc, char **argv)
     values = nullptr;
 
     // return
+    std::cout << "Press enter to continue...";
+    std::cin >> x; // dummy variable
     return EXIT_SUCCESS;
 }
