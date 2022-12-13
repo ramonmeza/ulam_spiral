@@ -36,7 +36,16 @@ void ulam::print_table(int data[], int size, int max_cols)
 
     do
     {
-        std::cout << *current << "\t";
+        if (ulam::is_prime(*current))
+        {
+            ulam::print_colored_text(std::to_string(*current), ulam::TextColor::red, ulam::TextStyle::bold);
+        }
+        else
+        {
+            std::cout << *current;
+        }
+        std::cout << "\t";
+
         if (++i % max_cols == 0)
         {
             std::cout << std::endl;
